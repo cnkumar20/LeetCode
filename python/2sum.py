@@ -20,11 +20,10 @@ class Solution(object):
             count +=1
         count = 0
         for x in nums:
-            if(result.has_key(x))
-                resturn [result[x],count]
+            if(result.has_key(x)):
+                return [result[x],count]
             count +=1
 a = [1,2,3,4,1,4]
 ab = Solution()
-ab.twoSum(a,4)
-print(a)
+print(ab.twoSum(a,4))
 
