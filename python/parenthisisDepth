@@ -1,0 +1,17 @@
+#Input any string, count the maximum depth of parenthesis nesting, i.e. "abc(123(xyz))m(((n)))o" -> 3
+
+def findParenthesisDepth(parenthisis):
+    maxdepth = 0
+    tracker = 0
+    max = 0
+    for x in parenthisis:
+        max = max if (max > tracker) else tracker
+        if(x=='('):
+            tracker +=1
+        elif (x==')'):
+            tracker -=1
+        else:
+            continue
+    return max if(tracker==0) else 0     
+
+print(findParenthesisDepth("()()()()"))
