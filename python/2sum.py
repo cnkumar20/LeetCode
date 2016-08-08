@@ -25,5 +25,5 @@ class Solution(object):
             count +=1
 a = [1,2,3,4,1,4]
 ab = Solution()
-print(ab.twoSum(a,4))
+print(ab.twoSum(a,5))
 
