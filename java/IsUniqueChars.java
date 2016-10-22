@@ -25,7 +25,7 @@ public class IsUniqueChars {
     }
 
 
-    public static void main() {
+    public static void main(String[] args) {
         String[] input = {"Kumar","sucheta","awesome"};
         for(String in : input){
             System.out.print("Algorithm 1 : "+isUnique_1(in)+" Algorithm 2 :"+isUnique_2(in));

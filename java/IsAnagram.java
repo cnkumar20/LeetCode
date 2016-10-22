@@ -17,10 +17,10 @@ public class IsAnagram {
 
     }
 
-    public static void main() {
+    public static void main(String[] args) throws Exception{
         String[][] input = {{"Kumar","Sucheta"},{"dog","god"}};
         for(String[] in : input) {
-            System.out.print(isAnagram(in[0],in[1]));
+            System.out.println(isAnagram(in[0],in[1]));
         }
     }
 }
