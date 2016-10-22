@@ -3,7 +3,7 @@
  */
 public class IsUniqueChars {
 
-    public static boolean isUnique(String input){
+    public static boolean isUnique_1(String input){
             if(input.length()>128) return false;
             boolean[] check = new boolean[128];
             for(char c : input.toCharArray()) {
@@ -12,10 +12,23 @@ public class IsUniqueChars {
             }
             return true;
     }
+
+    public static boolean isUnique_2(String input){
+        if(input.length()>128)return false;
+        int checker =0;
+        for(char c : input.toCharArray()){
+            int val = c - 'a';
+            if((checker & (1 << val)) > 0) return false;
+            checker |= (1<<val);
+        }
+        return true;
+    }
+
+
     public static void main() {
         String[] input = {"Kumar","sucheta","awesome"};
         for(String in : input){
-            System.out.print(isUnique(in));
+            System.out.print("Algorithm 1 : "+isUnique_1(in)+" Algorithm 2 :"+isUnique_2(in));
         }
     }
 }
