@@ -25,4 +25,5 @@ public class SymmetricTree {
 
         return lNode.val == rNode.val && isSymmetric(lNode.left,rNode.right) && isSymmetric(lNode.right,rNode.left);
     }
+
 }
