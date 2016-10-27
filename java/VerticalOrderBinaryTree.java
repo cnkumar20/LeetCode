@@ -1,8 +1,15 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
+ *             0 1
+ *             / \
+ *           1 2  3  -1
+ *           / \ / \
+ *        2 4 05 06 7 -2
+ *
+ *
+ *
  * Created by dexter on 10/26/16.
  */
 public class VerticalOrderBinaryTree {
