@@ -14,4 +14,12 @@ class TreeTraversal {
         System.out.println(root.data);
         inorder(root.right);
     }
+
+    public static void main(String[] args) {
+        Tree a = new Tree(1);
+        inorder(a);
+        preorder(a);
+
+    }
+
 }
