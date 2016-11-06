@@ -3,7 +3,7 @@ class Tree {
     Tree left;
     Tree right;
     Tree(int a) {
-        this.a = a;
+        this.data = a;
         this.right = null;
         this.left = null;
     }
