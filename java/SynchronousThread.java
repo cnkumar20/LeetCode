@@ -66,6 +66,7 @@ class SynchronousThread
         S1.start();
         S2.start();
 
+
         // wait for threads to end
         try
         {
