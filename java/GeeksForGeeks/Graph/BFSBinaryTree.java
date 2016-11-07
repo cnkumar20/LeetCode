@@ -9,11 +9,11 @@ import java.util.Queue;
 /**
  * Created by dexter on 11/6/16.
  */
-public class BFS {
+public class BFSBinaryTree {
     TreeNode node;
 
 
-    BFS(TreeNode node) {
+    BFSBinaryTree(TreeNode node) {
         this.node = node;
     }
 
@@ -44,9 +44,7 @@ public class BFS {
                 temp.add(tempNode.right);
             }
         }
-
         return false;
-
     }
 
 }
