@@ -1,9 +1,6 @@
 package GeeksForGeeks.LinkedList;
 
-import GeeksForGeeks.DataStructure.ListNode;
-import GeeksForGeeks.DataStructure.TreeNode;
-
-import java.util.List;
+import DataStructure.ListNode;
 
 /**
  * Created by dexter on 11/7/16.

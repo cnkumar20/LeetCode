@@ -1,4 +1,4 @@
-package ProgramCreek.DataStructure;
+package DataStructure;
 
 /**
  * Created by dexter on 11/6/16.

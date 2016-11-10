@@ -1,6 +1,6 @@
 package GeeksForGeeks.Graph;
 
-import GeeksForGeeks.DataStructure.TreeNode;
+import DataStructure.TreeNode;
 
 /**
  * Created by dexter on 11/6/16.

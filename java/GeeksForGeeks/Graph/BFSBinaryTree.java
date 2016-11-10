@@ -1,7 +1,6 @@
 package GeeksForGeeks.Graph;
 
-import GeeksForGeeks.DataStructure.*;
-import sun.reflect.generics.tree.Tree;
+import DataStructure.*;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
