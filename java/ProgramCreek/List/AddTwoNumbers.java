@@ -8,47 +8,32 @@ import DataStructure.ListNode;
 public class AddTwoNumbers {
     ListNode result = new ListNode(0);
 
-    public ListNode calculateSum(ListNode n1, ListNode n2) {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int carry =0;
 
-        ListNode temp1 = n1;
-        ListNode temp2 = n2;
-        int carry = 0;
-        ListNode temp = result;
-        while(n1!= null && n2 != null) {
+        ListNode newHead = new ListNode(0);
+        ListNode p1 = l1, p2 = l2, p3=newHead;
 
-            int num = n1.a + n2.a + carry ;
-
-            temp.next = new ListNode(num%10);
-            temp = temp.next;
-
-            if(num > 9) {
-                carry = 1;
+        while(p1 != null || p2 != null){
+            if(p1 != null){
+                carry += p1.a;
+                p1 = p1.next;
             }
-            else {
-                carry =0;
+
+            if(p2 != null){
+                carry += p2.a;
+                p2 = p2.next;
             }
-            n1 = n1.next;
-            n2 = n2.next;
+
+            p3.next = new ListNode(carry%10);
+            p3 = p3.next;
+            carry /= 10;
         }
 
-        if(n1 != null) {
-            temp.next = n1;
-        }
+        if(carry==1)
+            p3.next=new ListNode(1);
 
-        if(n2 != null) {
-            temp.next = n2;
-        }
-
-        while(carry!=0) {
-            temp = temp.next;
-            int tempvar =  temp.a+carry;
-
-            temp.a = tempvar %10;
-
-            carry = tempvar > 9 ?1:0;
-        }
-        return result.next;
-
+        return newHead.next;
     }
 
 }
