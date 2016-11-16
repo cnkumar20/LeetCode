@@ -1,12 +1,12 @@
+package GeeksForGeeks.Arrays;
+
 import java.io.*;
 import java.util.*;
-
-
+import GeeksForGeeks.DataStructure.*;
 
 class LongestCommonSubsequence {
   
   public static int LCS(String ip1, String ip2) {
-    
     int m = ip1.length();
     int n = ip2.length();
     
