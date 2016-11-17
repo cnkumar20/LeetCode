@@ -1,4 +1,4 @@
-// This is the text editor interface. 
+package LeetCode;// This is the text editor interface.
 
 // A) Write a changeSelector which would take in an amount and a fixed 
 //  collection of coins of following denominations: 1,5,10,25  

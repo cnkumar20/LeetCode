@@ -1,11 +1,9 @@
-/**
+package LeetCode; /**
  * Created by dexter on 11/5/16.
  */
 
 // A Java program to demonstrate working of
 // synchronized.
-import java.io.*;
-import java.util.*;
 
 // A Class used to send a message
 class Sender

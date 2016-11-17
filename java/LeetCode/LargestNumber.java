@@ -1,3 +1,5 @@
+package LeetCode;
+
 public class LargestNumber {
     public String largestNumber(int[] nums) {
 		if(nums==null || nums.length==0) {

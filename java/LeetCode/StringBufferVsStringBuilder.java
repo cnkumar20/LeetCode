@@ -1,3 +1,5 @@
+package LeetCode;
+
 import com.sun.deploy.util.StringUtils;
 
 /**

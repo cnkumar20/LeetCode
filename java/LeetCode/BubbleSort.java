@@ -1,4 +1,4 @@
-// This is the text editor interface. 
+package LeetCode;// This is the text editor interface.
 // Anything you type or change here will be seen by the other person in real time.
 import java.util.*;
 class BubbleSort {
