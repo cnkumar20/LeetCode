@@ -1,7 +1,6 @@
 package LeetCode;
 
 import java.util.HashSet;
-import java.util.LinkedList;
 
 /**
  * Created by dexter on 10/26/16.

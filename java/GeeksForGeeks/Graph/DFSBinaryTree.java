@@ -1,6 +1,6 @@
 package GeeksForGeeks.Graph;
 
-import DataStructure.TreeNode;
+import GeeksForGeeks.DataStructure.TreeNode;
 
 /**
  * Created by dexter on 11/6/16.
@@ -15,7 +15,7 @@ public class DFSBinaryTree {
 
 
     public boolean DFS(int a) {
-        return dfs(a,TreeNode root);
+        return dfs(a, root);
     }
 
     public boolean dfs(int a ,TreeNode root) {

@@ -1,4 +1,4 @@
-package GeeksForGeeks.DataStructure;
+package LeetCode;
 
 /**
  * Created by dexter on 11/6/16.

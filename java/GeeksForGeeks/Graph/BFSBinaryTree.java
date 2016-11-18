@@ -1,6 +1,6 @@
 package GeeksForGeeks.Graph;
 
-import DataStructure.*;
+import GeeksForGeeks.DataStructure.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

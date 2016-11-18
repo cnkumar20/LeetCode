@@ -1,11 +1,4 @@
-package LeetCode; /**
- * Created by dexter on 11/5/16.
- */
-
-// A Java program to demonstrate working of
-// synchronized.
-
-// A Class used to send a message
+package LeetCode; // A Class used to send a message
 class Sender
 {
     public void send(String msg)
@@ -27,7 +20,7 @@ class Sender
 class ThreadedSend extends Thread
 {
     private String msg;
-    Sender  sender;
+    Sender sender;
 
     // Recieves a message object and a string
     // message to be sent
