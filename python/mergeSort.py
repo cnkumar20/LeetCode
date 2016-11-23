@@ -1,5 +1,6 @@
 def mergeSort(a):
     if(len(a)>1):
+	//hammer
         mid = len(a)//2
         lefthalf = a[:mid]
         righthalf = a[mid:]
