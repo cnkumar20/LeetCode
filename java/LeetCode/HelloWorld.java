@@ -6,5 +6,6 @@ package LeetCode;
 public class HelloWorld {
     public void print(){
         System.out.println("Hello World!! Travis Check");
+        System.out.println("This is to test the new intellij installation and system upgrage!!");
     }
 }
