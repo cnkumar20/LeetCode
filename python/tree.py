@@ -1,3 +1,5 @@
+import math
+
 class Node():
     def __init__(self,d):
         self.data = d
@@ -19,3 +21,18 @@ class Tree():
             self.root = node
             return
         self._insert(self.root,node)
+
+    def minVal(self,node):
+        if(node==None):
+            return 10000
+        return min(node.val,self.minVal(node.left),self.minVal(node.right))
+    
+    def maxSumPath(self,node):
+        if(node == None):
+            return 0
+        if(node.left == None and node.right == None):
+            return node.val
+        leftSum = self.maxSumPath(node.left)
+        rightSum = self.maxSumPath(node.right)
+        return node.val + max(leftSum,rightSum)
+
