@@ -1,3 +1,9 @@
+'''
+    Given a start node in a binary tree find the number of minutes it takes to be infected completely/burning tree , at every minute spreads to left,right and parent from a start node
+'''
+
+from collections import deque
+
 def convert(current_node,parent,dict_map):
     if current_node == None:
         return
@@ -14,5 +20,24 @@ def convert(current_node,parent,dict_map):
 
     convert(current_node.left,current_node.val,dict_map)
     convert(current_node.right,current_node.val,dict_map)
+
+def amount_of_time(root,start ) -> int:
+    tree_map= {}
+    convert(root,0,tree_map)
+    queue = deque([start])
+    minute = 0
+    visited = {start}
+
+    while queue:
+        len_size = len(queue)
+        while len_size >0:
+            current = queue.popleft()
+            for num in tree_map[current]:
+                if num not in visited:
+                    visited.add(num)
+                    queue.append(num)
+            len_size -=1
+        minute +=1
+    return minute-1
 
 
