@@ -1,3 +1,5 @@
+#Dijikstras is to find shortest distance from src node to all other nodes in the graph
+
 import heapq
 import sys
 def construct(edges,V):
