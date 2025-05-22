@@ -1,3 +1,4 @@
 ./abc.txt
 cd.txt
+.ipy*
 python/\.ipy*
