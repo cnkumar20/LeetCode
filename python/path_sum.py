@@ -15,6 +15,8 @@ class Solution(object):
             return self.check(root,cur,sum)
 
         def check(self,root,cur,sum):
+            if cur == sum:
+                return True
             if(root == None):
                 return False
             if(root.left == None and root.right == None):
